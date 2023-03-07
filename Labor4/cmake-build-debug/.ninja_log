@@ -1,0 +1,10 @@
+# ninja log v5
+24	308	6998833466581324	CMakeFiles/Labor4.dir/functions.c.obj	8d38ac665ae6c66c
+1	314	6998833466601291	CMakeFiles/Labor4.dir/main.c.obj	b0381cf7c16c04cf
+315	727	6998833470500824	Labor4.exe	91e22b400fa89b8e
+6	330	6998835811325594	CMakeFiles/Labor4.dir/main.c.obj	b0381cf7c16c04cf
+29	373	6998835811775637	CMakeFiles/Labor4.dir/functions.c.obj	8d38ac665ae6c66c
+374	769	6998835815521082	Labor4.exe	91e22b400fa89b8e
+12	467	6998850426349665	CMakeFiles/Labor4.dir/main.c.obj	b0381cf7c16c04cf
+37	497	6998850426649686	CMakeFiles/Labor4.dir/functions.c.obj	8d38ac665ae6c66c
+497	949	6998850430850074	Labor4.exe	91e22b400fa89b8e
