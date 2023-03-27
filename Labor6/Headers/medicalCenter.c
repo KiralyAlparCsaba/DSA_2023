@@ -24,7 +24,7 @@ bool isEmpty(MedicalCenter queue){
     return queue.front == -1;
 }
 
-void enqueue(MedicalCenter *queue, int item) {
+void enqueue(MedicalCenter *queue, Patient item) {
     if(isFull(*queue)) {
         printf("IS FULL");
         return;
@@ -36,12 +36,8 @@ void enqueue(MedicalCenter *queue, int item) {
     queue->patient[queue->rear] = item;
 }
 
-int dequeue(MedicalCenter *queue) {
-    if(isEmpty(*queue)) {
-        printf("IS_EMPTY");
-        return INT_MIN;
-    }
-    int save = queue->patient[queue->front];
+Patient dequeue(MedicalCenter *queue) {
+    Patient save = queue->patient[queue->front];
     if(queue->front == queue->rear)
     {
         queue->front = queue->rear = -1;
@@ -50,5 +46,25 @@ int dequeue(MedicalCenter *queue) {
         queue->front = (queue->front + 1) % queue->capacity;
     }
     return save;
+}
+
+void display(MedicalCenter medicalCenter) {
+    if(isEmpty(medicalCenter)){
+        printf("There are no patients in the medical center\n");
+        return;
+    }
+    printf("The patiens are:\n");
+    int i = medicalCenter.front;
+    if(i != medicalCenter.rear){
+        do{
+            printPatient(medicalCenter.patient[i]);
+            i = (i+1) % medicalCenter.capacity;
+        } while (i != medicalCenter.rear);
+    }
+    printPatient(medicalCenter.patient[i]);
+    printf("\n");
+}
+void destroyMedicalCenter(MedicalCenter *medicalCenter){
+
 }
 
