@@ -49,19 +49,19 @@ cmake_ninja_workdir = E$:/DSA/Labor4/cmake-build-debug/
 
 build cmake_object_order_depends_target_Labor4: phony || CMakeFiles/Labor4.dir
 
-build CMakeFiles/Labor4.dir/main.c.obj: C_COMPILER__Labor4_Debug E$:/DSA/Labor4/main.c || cmake_object_order_depends_target_Labor4
-  DEP_FILE = CMakeFiles\Labor4.dir\main.c.obj.d
+build CMakeFiles/Labor4.dir/src/main.c.obj: C_COMPILER__Labor4_Debug E$:/DSA/Labor4/src/main.c || cmake_object_order_depends_target_Labor4
+  DEP_FILE = CMakeFiles\Labor4.dir\src\main.c.obj.d
   FLAGS = -g -std=gnu2x
   INCLUDES = -IE:/DSA/Labor4/Labor4 -IE:/DSA/Labor4/Headers
   OBJECT_DIR = CMakeFiles\Labor4.dir
-  OBJECT_FILE_DIR = CMakeFiles\Labor4.dir
+  OBJECT_FILE_DIR = CMakeFiles\Labor4.dir\src
 
-build CMakeFiles/Labor4.dir/functions.c.obj: C_COMPILER__Labor4_Debug E$:/DSA/Labor4/functions.c || cmake_object_order_depends_target_Labor4
-  DEP_FILE = CMakeFiles\Labor4.dir\functions.c.obj.d
+build CMakeFiles/Labor4.dir/src/functions.c.obj: C_COMPILER__Labor4_Debug E$:/DSA/Labor4/src/functions.c || cmake_object_order_depends_target_Labor4
+  DEP_FILE = CMakeFiles\Labor4.dir\src\functions.c.obj.d
   FLAGS = -g -std=gnu2x
   INCLUDES = -IE:/DSA/Labor4/Labor4 -IE:/DSA/Labor4/Headers
   OBJECT_DIR = CMakeFiles\Labor4.dir
-  OBJECT_FILE_DIR = CMakeFiles\Labor4.dir
+  OBJECT_FILE_DIR = CMakeFiles\Labor4.dir\src
 
 
 # =============================================================================
@@ -71,7 +71,7 @@ build CMakeFiles/Labor4.dir/functions.c.obj: C_COMPILER__Labor4_Debug E$:/DSA/La
 #############################################
 # Link the executable Labor4.exe
 
-build Labor4.exe: C_EXECUTABLE_LINKER__Labor4_Debug CMakeFiles/Labor4.dir/main.c.obj CMakeFiles/Labor4.dir/functions.c.obj
+build Labor4.exe: C_EXECUTABLE_LINKER__Labor4_Debug CMakeFiles/Labor4.dir/src/main.c.obj CMakeFiles/Labor4.dir/src/functions.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Labor4.dir
