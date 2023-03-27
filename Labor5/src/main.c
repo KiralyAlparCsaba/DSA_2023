@@ -17,22 +17,40 @@ while(token != NULL) {
             int x = atoi(token);
             push(&verem, x);
 
-        } else {
+        }
+        else {
             int n1 = pop(&verem), n2 = pop(&verem);
-            if (strcmp(token, "+") == 0) {
-                push(&verem, n1 + n2);
-            }
-            if (strcmp(token, "-") == 0) {
-                push(&verem, n2 - n1);
-            }
-            if (strcmp(token, "*") == 0) {
-                push(&verem, n1 * n2);
-            }
-            if (strcmp(token, "/") == 0) {
-                push(&verem, n2 / n1);
-            }
-            if (strcmp(token, "+") == 0) {
-                push(&verem, n2 % n1);
+            char operation=token[0];
+            switch(operation){
+                case '+' :{
+                    push(&verem,n1+n2);
+                }
+                case '-' :{
+                    if(n1>n2)
+                      push(&verem,n1-n2);
+                    else
+                        push(&verem,n2-n1);
+                }
+                case '*' :{
+                    push(&verem,n1*n2);
+                }
+                case '/' :{
+                    if(n1>n2)
+                        push(&verem,n1/n2);
+                    else
+                        push(&verem,n2/n1);
+
+                }
+                case '%' :{
+                    if(n1>n2)
+                        push(&verem,n1%n2);
+                    else
+                        push(&verem,n2%n1);
+
+                }
+                default:{
+                    printf("nincs ilyen muvelet");
+                }
             }
         }
 
@@ -42,14 +60,9 @@ while(token != NULL) {
     }
     int y = pop(&verem);
     printf("%i", y);
-
-
-
-
-
-
     token = strtok(NULL," ");
 }
+    destroyStack(&verem);
 
 
 }
