@@ -1,6 +1,5 @@
 # ninja log v5
-39	516	7047578101661097	CMakeFiles/Labor10.dir/src/binary_search_tree.c.obj	f3265673489a100d
+34	529	7047582831763388	CMakeFiles/Labor10.dir/src/binary_search_tree.c.obj	f3265673489a100d
 74	528	7047578101811145	CMakeFiles/Labor10.dir/src/binary_tree.c.obj	302ebe6ca99fe6c2
 7	342	7047578215308398	CMakeFiles/Labor10.dir/src/main.c.obj	d67fd0e6dfa6ecaa
 344	970	7047578220958827	Labor10.exe	7e15db06583b7fb
-34	529	7047582831763388	CMakeFiles/Labor10.dir/src/binary_search_tree.c.obj	f3265673489a100d
