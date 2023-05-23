@@ -1,0 +1,10 @@
+# ninja log v5
+3	690	7065321931788605	CMakeFiles/Info_A.dir/src/main.c.obj	314e1cd80e091daf
+28	697	7065321932268602	CMakeFiles/Info_A.dir/src/bsc.c.obj	f83e98aca170eb6c
+33	437	7065322198080554	CMakeFiles/Info_A.dir/src/main.c.obj	314e1cd80e091daf
+8	618	7065322546420949	CMakeFiles/Info_A.dir/src/main.c.obj	314e1cd80e091daf
+8	504	7065325892291009	CMakeFiles/Info_A.dir/src/bsc.c.obj	f83e98aca170eb6c
+7	335	7065326167631389	CMakeFiles/Info_A.dir/src/main.c.obj	314e1cd80e091daf
+6	357	7065332756309493	CMakeFiles/Info_A.dir/src/main.c.obj	314e1cd80e091daf
+7	517	7065337687338874	CMakeFiles/Info_A.dir/src/bsc.c.obj	f83e98aca170eb6c
+519	4110	7065337693612186	Info_A.exe	6c0248f2ac686eeb

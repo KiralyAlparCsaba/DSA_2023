@@ -32,7 +32,7 @@ int hashCode(int key) {
     return key % CAPACITY;
 }
 
-void insert(HashTable *hashTable, char key, char data) {
+void insert(HashTable *hashTable, int key, int data) {
     if(hashTable->size >= CAPACITY) return;
     int index = hashCode(key);
     int i = 0;
